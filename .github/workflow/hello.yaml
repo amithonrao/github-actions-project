@@ -2,8 +2,13 @@
 #should have name
 name: Hello
 
+#on tells when to workflow should run
+on:
+  workflow_dispatch:
+
 #jobs
-#Should be inside the workflow
+#Should be inside the workflow. There can be one or more than jobs,, hence we write jobs
+#job is an object so needs indentation
 Jobs:
   runs-on: ubuntu-latest
   say-hello:
