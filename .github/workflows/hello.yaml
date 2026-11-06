@@ -10,8 +10,8 @@ on:
 #Should be inside the workflow. There can be one or more than jobs,, hence we write jobs
 #job is an object so needs indentation
 jobs:
-  runs-on: ubuntu-latest
   say-hello:
+    runs-on: ubuntu-latest
     steps:
       - name: Hello Everyone
         run: echo "Hello Friends"
