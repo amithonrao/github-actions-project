@@ -9,7 +9,7 @@ on:
 #jobs
 #Should be inside the workflow. There can be one or more than jobs,, hence we write jobs
 #job is an object so needs indentation
-Jobs:
+jobs:
   runs-on: ubuntu-latest
   say-hello:
     steps:
