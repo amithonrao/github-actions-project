@@ -12,6 +12,9 @@ jobs:
       - name: Checkout/Clone the code
         uses: actions/checkout@v7
 
+      - name: install python
+        uses: actions/setup-python
+
       - name: Install Linter
         run: pip install ruff
 
