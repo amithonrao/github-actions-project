@@ -1,0 +1,13 @@
+name: auto Linter
+
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout/Clone the code
+        uses: actions/checkout@v7
